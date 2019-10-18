@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.logo_title {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+.title {
+  align-self: center;
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 35px;
+}
+.icon {
+  width: 60px;
+  margin-right: 20px;
+}
+header {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto Mono', monospace;
+}
+header .logo {
+  width: 200px;
+  margin-right: 20px;
+}
+header .shkolenko {
+  align-self: center;
+  line-height: 1.5;
+}
+header .shkolenko h1 {
+  font-weight: 100;
+}
+header .shkolenko h2 {
+  font-weight: 400;
+  font-size: 35px;
+}
+header .menu-button {
+  border: none;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header .menu-button:focus {
+  outline: 0;
+}
+header .menu-button span,
+header .menu-button span::before,
+header .menu-button span::after {
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -1px;
+  margin-left: -9px;
+  background-color: #333;
+}
+header .menu-button span::before {
+  transition: all 0.2s;
+  content: "";
+  margin-top: -6px;
+}
+header .menu-button span::after {
+  transition: all 0.2s;
+  content: "";
+  margin-top: 4px;
+}
+header .menu-button__active span {
+  background-color: transparent;
+}
+header .menu-button__active span::before {
+  transform: rotate(135deg);
+  margin-top: 0;
+}
+header .menu-button__active span::after {
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+header .menu {
+  transition: all 0.5s;
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -100vw;
+}
+header .menu ul {
+  text-align: center;
+}
+header .menu ul button {
+  border: none;
+  font: inherit;
+  background-color: transparent;
+  transition: all 0.2s;
+  color: black;
+  font-size: 1.7em;
+  text-decoration: none;
+  display: block;
+  width: 100vw;
+  padding: 23px 0;
+  cursor: pointer;
+}
+header .menu ul button:hover {
+  background-color: black;
+  color: white;
+}
+header .menu ul button:focus,
+header .menu ul button:active {
+  outline: none;
+}
+header .menu__active {
+  left: 0;
+}
+#about .my-photo {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+#about .my-photo img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+#about p {
+  margin: 0 auto;
+  font-size: 20px;
+  width: 65%;
+  line-height: 1.5;
+}
+#portfolio .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#portfolio .projects .project {
+  margin-bottom: 40px;
+}
+#portfolio .projects .project .preview {
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+  display: inline-block;
+}
+#portfolio .projects .project .preview img {
+  transition: 1s;
+  display: block;
+  width: 420px;
+  height: 250px;
+  object-fit: cover;
+}
+#portfolio .projects .project .preview img:hover {
+  transform: scale(1.2);
+}
+#portfolio .projects .project h4 {
+  padding: 5px 0;
+  font-size: 15px;
+}
+#portfolio .projects .project a:hover {
+  color: grey;
+}
+#portfolio .projects .project p {
+  color: grey;
+  padding-top: 5px;
+}
+.line {
+  width: 80%;
+  height: 1px;
+  margin: 30px auto;
+  background: black;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+#contact .contact_links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 20px;
+}
+#contact .contact_links a {
+  margin-bottom: 2%;
+}
+#contact .contact_links a:hover {
+  color: #124252;
+}
+#contact .contact_links a img {
+  width: 50px;
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+#contact .contact_links a img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}

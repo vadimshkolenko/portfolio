@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet" href="less/media.css">
+    <title>Vadim Shkolenko</title>
+</head>
+
+<body>
+    <header id="main">
+        <button class="menu-button">
+            <span></span>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><button data-scroll-link="main">Главная</button></li>
+                <li><button data-scroll-link="about">Обо мне</button></li>
+                <li><button data-scroll-link="portfolio">Мои работы</button></li>
+            </ul>
+        </nav>
+
+        <div class="logo_title">
+            <div class="logo">
+                <img src="img/web.svg" alt="">
+            </div>
+            <div class="shkolenko">
+                <h1>Вадим Школенко</h1>
+                <h2>Frontend-developer</h2>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="logo_title">
+            <img src="img/about.svg" alt="" class="icon">
+            <h2 class="title">Обо мне</h2>
+        </div>
+        <div class="my-photo"><img src="img/vadim.jpg" alt=""></div>
+        <p>
+            Привет! Я начинающий Frontend-разработчик из Москвы.
+            В данный момент являюсь студентом 2 курса Московского политехнического университета
+            и ищу стажировку. Также готов поработать над Вашим персональным сайтом
+            или сайтом для Вашей компании, рассмотрю любые предложения.
+            <br><b>Мои навыки:</b> HTML5, CSS3, JavaScript, GIT, LESS, Photoshop
+        </p>
+
+    </section>
+    <section id="portfolio">
+        <div class="logo_title">
+            <img src="img/portfolio.svg" alt="" class="icon">
+            <h2 class="title">Мои работы</h2>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <a href="https://perevozchik.space/" target="_blank">
+                    <div class="preview"><img src="img/perevozchik.png" alt=""></div>
+                </a>
+                <h4>Landing page "Перевозчик"</h4>
+                <a href="https://github.com/vadimshkolenko/perevozchik" target="_blank">Посмотреть код на github</a>
+                <p>Июнь, 2019</p>
+            </div>
+            <div class="project">
+                <a href="http://gofrotorg.com/" target="_blank">
+                    <div class="preview"><img src="img/gofrotorg.png" alt=""></div>
+                </a>
+                <h4>Сайт ГофроТОРГ</h4>
+                <a href="https://github.com/vadimshkolenko/gofrocart" target="_blank">Посмотреть код на github</a>
+                <p>Июль, 2019</p>
+            </div>
+            <div class="project">
+                <a href="http://tic-tac-toe.vadimshkolenko.website/" target="_blank">
+                    <div class="preview"><img src="img/tic-tac-toe.png" alt=""></div>
+                </a>
+                <h4>Крестики-нолики</h4>
+                <a href="https://github.com/vadimshkolenko/tic-tac-toe" target="_blank">Посмотреть код на github</a>
+                <p>Сентябрь, 2019</p>
+            </div>
+        </div>
+    </section>
+    <div class="line"></div>
+    <section id="contact">
+        <div class="contact_links">
+            <a href="tel:+79210398929"><img src="img/phone.png" alt=""></a>
+            <a href="tg://resolve?domain=vdmsh" target="_blank"><img src="img/telegram.svg" alt=""></a>
+            <a href="mailto:vadimand1998@gmail.com" target="_blank"><img src="img/gmail.svg" alt=""></a>
+            <a href="https://github.com/vadimshkolenko" target="_blank"><img src="img/github.svg" alt=""></a>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
